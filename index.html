@@ -57,25 +57,36 @@
     }
     </style>
 
-<style>
-   
-    /* Estilos para dispositivos móviles */
-    @media (max-width: 767px) {
-        .carousel-control-prev,
-        .carousel-control-next {
-            color: black; /* Cambia el color de las flechas en dispositivos móviles */
-            top: 50%; /* Posiciona las flechas un poco más hacia el centro vertical */
-        }
+    <style>
+    
+        /* Estilos para dispositivos móviles */
+        @media (max-width: 767px) {
+            .carousel-control-prev,
+            .carousel-control-next {
+                color: black; /* Cambia el color de las flechas en dispositivos móviles */
+                top: 50%; /* Posiciona las flechas un poco más hacia el centro vertical */
+            }
 
-        .carousel-control-prev {
-            left: 5px; /* Mueve la flecha izquierda un poco hacia la izquierda */
-        }
+            .carousel-control-prev {
+                left: 5px; /* Mueve la flecha izquierda un poco hacia la izquierda */
+            }
 
-        .carousel-control-next {
-            right: 5px; /* Mueve la flecha derecha un poco hacia la derecha */
+            .carousel-control-next {
+                right: 5px; /* Mueve la flecha derecha un poco hacia la derecha */
+            }
         }
-    }
-</style>
+    </style>
+    <style>
+        /* Estilos para dispositivos móviles */
+        @media (max-width: 767px) {
+            .mobile-name {
+                font-size: 1.5rem; /* Reducir el tamaño de la fuente */
+                overflow: hidden; /* Ocultar el texto que se desborda */
+                text-overflow: ellipsis; /* Mostrar puntos suspensivos (...) cuando el texto se desborda */
+                white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+            }
+        }
+    </style>
     
     
 </head>
@@ -93,7 +104,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light shadow border-top border-5 border-primary sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="mb-2 text-primary" style="font-family: 'Montserrat', sans-serif;">Guillermo González González</h2>
+            <h2 class="mb-2 text-primary mobile-name" style="font-family: 'Montserrat', sans-serif;">Guillermo González González</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -178,7 +189,7 @@
                     <div class="row justify-content-center">
                         <div class="col-md-8 mb-4">
                             <div class="card project-card">
-                                <img src="img/Dreanite2.png" class="card-img-top" alt="Proyecto 3"style="max-height: 504px;">
+                                <img src="img/dreanite3.png" class="card-img-top" alt="Proyecto 3"style="max-height: 504px;">
                                 <div class="card-body">
                                     <h5 class="card-title">Dreanite</h5>
                                     <p class="card-text">Juego de cartas 2D: monstruos y pesadillas.</p>
@@ -194,7 +205,7 @@
                     <div class="row justify-content-center">
                         <div class="col-md-8 mb-4">
                             <div class="card project-card">
-                                <img src="img/Tetripong.png" class="card-img-top" alt="Proyecto 4"style="max-height: 504px;">
+                                <img src="img/Tetripong1.png" class="card-img-top" alt="Proyecto 4"style="max-height: 504px;">
                                 <div class="card-body">
                                     <h5 class="card-title">Tetripong</h5>
                                     <p class="card-text">Minijuego de Tetris donde los bloques se pueden romper de otra forma.</p>
