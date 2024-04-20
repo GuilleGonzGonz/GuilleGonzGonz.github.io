@@ -49,8 +49,9 @@
         /* Establece el tamaño de la imagen de fondo en dispositivos de pantalla más pequeña */
         @media screen and (max-width: 768px) {
             #presentation {
-                background-size: cover; /* Ajusta el tamaño para cubrir todo el contenedor */
+                background-size: contain; /* Ajusta el tamaño para contener la imagen dentro del contenedor */
                 background-position: center; /* Centra la imagen */
+                height: 300px; /* Establece una altura fija para el contenedor en dispositivos móviles */
             }
         }
     </style>
