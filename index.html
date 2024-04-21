@@ -74,6 +74,15 @@
         }
     }
     </style>
+
+    <style>
+        /* hide on bigger screens */
+        @media (min-width: 1000px) {
+            .mobile-description{
+                display: none !important;
+            }
+        }
+    </style>
     
     <style>
     /* Adjust height for phones */
@@ -111,10 +120,11 @@
     <nav class="navbar navbar-expand-lg bg-dark navbar-light shadow border-top border-5 border-primary sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="mb-2 text-primary mobile-name">Guillermo González <span class="d-none d-lg-inline">González</span></h2>
+            <a href="index_es.html"class="mobile-description">
+                <img src="img/us-es.png" alt="United States" style="width: 50px; height: auto; margin-right: 10px;">
+            </a>
         </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+       
         <div class="collapse navbar-collapse" id="navbarCollapse">
             
             <div class="navbar-nav ms-auto p-4 p-lg-0">
@@ -125,8 +135,10 @@
             <h4 class="m-0 pe-lg-2 d-none d-lg-block text-white">
                 <i class="fa fa-phone-alt text-white me-3"></i>+34 686 00 94 13
             </h4>
-            <span class="flag-icon flag-icon-us"style="font-size: 2.3vh; margin-right: 10px;"></span> <!-- United States -->
-
+            <a href="index_es.html">
+                <img src="img/us-es.png" alt="United States" style="width: 50px; height: auto; margin-right: 10px;">
+            </a>
+            
         </div>
     </nav>
     <!-- Navbar End -->
@@ -136,8 +148,12 @@
 <section id="presentation" class="container-fluid d-flex align-items-center p-0" style="background-image: url('img/background.jpg'); height: 100vh;">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="text-white font-weight-bold px-4 px-lg-5 d-none d-lg-block" style="font-size: 5rem;">Guillermo González González.</h1>
-            <h1 class="text-white font-weight-bold px-4 px-lg-5 "style="font-size: 1.5rem;">C# & C++ Programmer. Game Designer.</h1>
+            <h1 class="text-white font-weight-bold px-4 px-lg-5 d-none d-lg-block" style="font-size: 5rem;">Guillermo González González</h1>
+            <h1 class="text-white font-weight-bold px-4 px-lg-5 d-none d-lg-block"style="font-size: 2rem; margin-left: 5px;">C# & C++ Programmer. Game Designer.</h1>
+            
+            <h1 class="mobile-description text-white font-weight-bold px-4 px-lg-5"style="font-size: 1.5rem;">C# & C++ Programmer.</h1>
+            <h1 class="mobile-description text-white font-weight-bold px-4 px-lg-5"style="font-size: 1.5rem;">Game Designer.</h1>
+
         </div>
     </div>
 </section>
